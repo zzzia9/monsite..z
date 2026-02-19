@@ -39,11 +39,9 @@ p {
 }
 
 .image-centree img {
-    width: 20px;       /* largeur souhaitée */
-    height: auto;       /* garde les proportions */
     display: block;
-    margin: 0 auto;     /* centre l'image */
-    border: 2px solid #5a3e1b;
+    margin: 30px auto;
+    border: 4px solid #5a3e1b;
 }
 
 ul, ol {
@@ -62,7 +60,22 @@ th, td {
     text-align: center;
 }
 
+.galerie {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
 
+.photo {
+    width: 30%;
+    height: 120px;
+    border: 2px dashed #5a3e1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    background-color: rgba(255,255,255,0.4);
+}
 
 .bouton-fin {
     text-align: center;
@@ -100,4 +113,46 @@ html {
 
 body {
     font-weight: 800;
+}.boutons-fin {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-mini {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+
+    background-color: #8b7d5a;
+    color: white; /* couleur du texte */
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-mini:hover {
+    background-color: #6f6245;
+    color: white; 
+}
+ul li a {
+    color: #5a3e1b;        
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #8b7d5a;       
+    text-decoration: underline;
+}
+.double-liste {
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-liste ul {
+    width: 45%;
 }
