@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bienvenue sur l'Olympe</title>
+  
+<a href="index.html" class="btn-accueil">Accueil</a>
+  <link rel="stylesheet" href="arbre.css">
+<style>
+ body {
+    margin: 0;
+    position: relative; /* important */
+}
+
+.btn-accueil {
+    position: fixed;   /* mieux que absolute */
+    top: 20px;
+    left: 20px;
+    padding: 12px 25px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;   /* force au-dessus de tout */
+    transition: 0.3s;
+}
+
+.btn-accueil:hover {
+    background: white;
+    color: black;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Cinzel", serif;
+  color: white;
+}
+
+
+.reveal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.reveal-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  filter: brightness(3) blur(8px);
+  animation: revealOlympe 4s ease forwards;
+}
+
+
+.reveal-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 1;
+  animation: flashFade 2s ease forwards;
+}
+
+
+.divine-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.line {
+  opacity: 0;
+  font-size: 2em;
+  margin: 20px 0;
+  animation: fadeInText 2s ease forwards;
+  text-shadow: 
+      0 0 10px rgba(0,0,0,0.8),
+      0 0 20px rgba(0,0,0,0.6),
+      0 0 30px rgba(0,0,0,0.4);
+}
+
+  .line1 {
+    font-size: 5.5em;
+  font-weight: bold;
+  letter-spacing: 4px;
+      white-space: nowrap;
+}
+
+.line1 { animation-delay: 4s; }
+.line2 { animation-delay: 7s; }
+.line3 { animation-delay: 10s; }
+
+
+.divine-btn {
+  opacity: 0;
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-family: "Cinzel", serif;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: fadeInText 2s ease forwards;
+  animation-delay: 13s;
+}
+
+.divine-btn:hover {
+  background: white;
+  color: black;
+}
+
+
+@keyframes revealOlympe {
+  0% { opacity: 0; filter: brightness(3) blur(8px); }
+  100% { opacity: 1; filter: brightness(1) blur(0); }
+}
+
+@keyframes flashFade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="reveal-container">
+  <img src="olympe.png" alt="Mont Olympe">
+
+  <div class="divine-text">
+    <div class="line line1">Bienvenue dans l’Olympe…</div>
+    <div class="line line2">Maintenant que tu connais les dieux principaux…</div>
+    <div class="line line3">Es-tu prêt à découvrir ton ADN divin ?</div>
+
+    
+  <a href="adndivin.html">
+  <button class="divine-btn">Commencer le test</button>
+</a>
+  </div>
+</div>
+
+</body>
+</html>
