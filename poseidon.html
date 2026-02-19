@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Poséidon – Le maître des océans</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #002b36, #000814); 
+      color: #a7c7e7;
+      font-family: "Cinzel", serif;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 3em;
+      letter-spacing: 3px;
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+    }
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: #001f3f;
+    }
+    nav a {
+      color: #66b2ff;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(0, 64, 128, 0.6);
+      border: 1px solid #3399ff;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(102,178,255,0.2);
+    }
+    h2 {
+      color: #66b2ff;
+      border-bottom: 1px solid #3399ff;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+        width: 400px;
+      border-radius: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #66b2ff;
+      padding: 10px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #001f3f;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    #recit {
+        display: none; 
+    }
+    a {
+      color: #a7c7e7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .btnRecit {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      background: #00509e;
+      color: #a7c7e7;
+      border: 2px solid #3399ff;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Cinzel', serif;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    .btnRecit:hover {
+      background: #3399ff;
+      color: black;
+    }
+
+    #histoire {
+        display: none; 
+    }
+
+
+
+    a {
+    color: #a7c7e7;     
+    text-decoration: none; 
+    font-weight: bold;      
+}
+  a:hover {
+    color: #ffffff;       
+    text-decoration: underline; 
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+ 🌊 Poséidon – Le maître des océans
+</header>
+
+<nav>
+<a href="#recit">Révéler le récit ↓</a>
+<a href="https://fr.wikipedia.org/wiki/Pos%C3%A9idon" target="_blank">Lien externe</a>
+</nav>
+
+<!-- Image cliquable -->
+<a href="https://fr.wikipedia.org/wiki/Poséidon" target="_blank">
+<img src="poseidon.png" alt="Représentation de Poséidon">
+</a>
+
+<section>
+<h2>Nom</h2>
+<ul>
+<li>Nom grec : Ποσειδῶν (Poseidôn)</li>
+<li>Nom latin : Neptunus (Neptune)</li>
+<li>Signification : Seigneur des eaux</li>
+</ul>
+</section>
+
+<section>
+<h2>Nature / Fonction</h2>
+<ul>
+<li>Dieu olympien</li>
+<li>Dieu des mers et des océans</li>
+<li>Dieu des tremblements de terre</li>
+<li>Dieu des chevaux</li>
+<li>Protecteur (ou destructeur) des marins</li>
+</ul>
+
+<h3>Objets / Attributs</h3>
+<ul>
+<li><a href="hhttps://fr.wikipedia.org/wiki/Trident" target="_blank"> Trident</a> (capable de soulever les mers et fendre la terre)</li>
+<li>Char tiré par des chevaux marins</li>
+<li>Créatures marines</li>
+</ul>
+</section>
+
+<section>
+<h2>Famille</h2>
+<ul>
+<li>Parents : <a href="cronos.html" target="_blank">Cronos</a> et <a href="rhea.html" target="_blank">Rhéa</a></li>
+<li>Épouse principale : <a href="https://fr.wikimini.org/wiki/Amphitrite#:~:text=%2DC.),avec%20le%20nom%20de%20Salacia." target="_blank"> Amphitrite</a>  (nymphe marine)</li>
+<li>Enfants célèbres : <a href="https://fr.wikipedia.org/wiki/Triton_(mythologie)#:~:text=Triton%20(en%20grec%20ancien%20%3A%20Τρίτων,par%20Lamia%2C%20et%20des%20tritons." target="_blank"> Triton</a>, Polyphème, Orion (dans certaines versions), héros et créatures marines</li>
+</ul>
+</section>
+
+<section>
+<h2>Caractère</h2>
+<ul>
+<li>Puissant, Impulsif, Colérique, Fier, Capricieux</li>
+<li>Il pouvait offrir des mers calmes… ou déclencher des tempêtes terrifiantes</li>
+</ul>
+</section>
+
+<button class="btnRecit" onclick="afficherRecit()">📖 Révéler le récit</button>
+
+<section id="recit">
+<h2>Récit narratif</h2>
+<p>
+Lorsque <a href="zeus.html" target="_blank">Zeus</a>vainquit <a href="cronos.html" target="_blank">Cronos</a> et les Titans, le monde fut partagé entre les trois frères. 
+<a href="zeus.html" target="_blank">Zeus</a> reçut le ciel, <a href="hades.html" target="_blank">Hades</a> obtint le monde souterrain, et <a href="poseidon.html" target="_blank">Poseidon</a> devint maître des mers.<br><br>
+
+Depuis son palais de corail au fond des océans, Poséidon règne sur les vagues. Armé de son trident, il peut faire jaillir des sources, provoquer des séismes ou soulever d’immenses tempêtes. 
+On l’appelle aussi l’« Ébranleur de la Terre », car lorsqu’il frappe le sol, la terre tremble.<br><br>
+
+Les marins le priaient avant chaque voyage, offrant sacrifices et prières pour apaiser sa colère. Car Poséidon est imprévisible : parfois protecteur, parfois terrible.<br><br>
+
+On raconte qu’il frappa l’Acropole d’Athènes de son trident pour faire surgir une source d’eau salée lors de son affrontement avec <a href="https://www.geo.fr/histoire/athena-deesse-de-la-guerre-mais-pas-que-217839" target="_blank"> Athéna</a>. 
+Mais la sagesse de la déesse l’emporta, et la cité ne porta pas son nom.<br><br>
+
+Malgré sa puissance immense, Poséidon demeure souvent dans l’ombre de <a href="zeus.html" target="_blank">Zeus</a>, mais nul ne peut ignorer le grondement des vagues lorsque le dieu des mers s’irrite.
+</p>
+</section>
+
+<footer>
+  <a href="arbre.html">
+  <button class="btnRecit">Suivant →</button>
+</a>
+  <a href="index.html">
+  <button class="btnRecit">🏠 Accueil </button>
+</a>
+Sources : Recherches personnelles + 
+<a href="https://fr.wikipedia.org/wiki/Pos%C3%A9idon" target="_blank">Wikipédia – Poséidon</a>
+</footer>
+
+<script>
+function afficherRecit(){
+    const r = document.getElementById("recit");
+    if(r.style.display === "block"){
+        r.style.display = "none";
+    } else {
+        r.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
