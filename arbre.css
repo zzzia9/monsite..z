@@ -1,0 +1,177 @@
+body {
+    background-color: black;
+    background-image:
+        radial-gradient(1px 1px at 5% 10%, white 50%, transparent),
+        radial-gradient(1px 1px at 15% 40%, white 50%, transparent),
+        radial-gradient(2px 2px at 25% 70%, white 50%, transparent),
+        radial-gradient(1px 1px at 35% 20%, white 50%, transparent),
+        radial-gradient(2px 2px at 45% 90%, white 50%, transparent),
+        radial-gradient(1px 1px at 55% 30%, white 50%, transparent),
+        radial-gradient(2px 2px at 65% 60%, white 50%, transparent),
+        radial-gradient(1px 1px at 75% 15%, white 50%, transparent),
+        radial-gradient(2px 2px at 85% 80%, white 50%, transparent),
+        radial-gradient(1px 1px at 95% 50%, white 50%, transparent);
+    color: white;
+}
+
+.instruction {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #FFFBE8;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.arbre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.couple {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+
+
+.personne img,
+.enfant img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+}
+
+.personne img,
+.couple-parent img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+}
+
+
+a {
+    display: block;
+    margin-top: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.generation {
+    display: flex;
+    gap: 70px;
+}
+
+.enfant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.ligne-horizontale-large {
+    width: 586px;
+    height: 2px;
+    background: white;
+    margin: 0;
+}
+.ligne-horizontale-large2{
+    width: 584px;
+    height: 2px;
+    background: white;
+    margin: 0;
+}
+
+
+
+.generation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; */
+    gap: 70px;
+}
+
+.couple-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.ligne-horizontale {
+    width: 80px;
+    height: 2px;
+    background: white;
+}
+
+.ligne-horizontale {
+    width: 95px;  /* longueur de la ligne entre Rhéa et Chronos */
+    height: 2px;
+    background: white;
+    align-self: center; /* centre la ligne entre les deux */
+    margin: 0; /* petit espace */
+}
+
+.ligne-horizontale1 {
+    position: absolute;
+    width: 76px;
+    left: 50%;
+    top: 83%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    background: white;
+}
+
+
+
+.ligne-verticale2 {
+    width: 2px;
+    height: 150px;
+    background: white;
+    margin-top: -79px;
+}
+.ligne-verticale3 {
+    width: 2px;
+    height: 150px;
+    background: white;
+    margin-top: -78px;
+}
+.ligne-verticale {
+    width: 2px;
+    height: 42px;
+    background: white;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2em; /* optionnel : texte plus gros */
+}
+
+
+.btn-accueil {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* blanc très transparent */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-accueil:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(1.1); /* léger zoom au survol */
+}
