@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Ouranos – Le Ciel étoilé</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #0d1b1e, #000000);
+      color: #e8d8a8;
+      font-family: "Cinzel", serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 3em;
+      letter-spacing: 3px;
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: #081c15;
+    }
+
+    nav a {
+      color: #58c0f0; /* bleu ciel pour Ouranos */
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(20, 40, 30, 0.6);
+      border: 1px solid #58c0f0; /* contour bleu ciel */
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(88,192,240,0.2);
+    }
+
+    h2 {
+      color: #58c0f0; /* bleu ciel */
+      border-bottom: 1px solid #3aa6d0;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 600px;
+      border-radius: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid #58c0f0; /* bleu ciel */
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #081c15;
+    }
+
+    .btnHistoire {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      background: #1b3a4b;       
+      color: #e8d8a8;
+      border: 2px solid #58c0f0; 
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Cinzel', serif;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    .btnHistoire:hover {
+      background: #58c0f0;  
+      color: black;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  a {
+    color: #e8d8a8;     
+    text-decoration: none; 
+    font-weight: bold;      
+}
+  a:hover {
+    color: #ffffff;       
+    text-decoration: underline; 
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ 🌌 OURANOS – Le Ciel étoilé
+</header>
+
+<nav>
+<a href="#histoire">Aller à l'Histoire ↓</a>
+<a href="https://fr.wikipedia.org/wiki/Uranus_(mythologie)" target="_blank">Lien externe</a>
+</nav>
+
+<!-- Image cliquable -->
+<a href="https://blogpeda.ac-bordeaux.fr/abcdulatin/2017/12/06/ouranos/#:~:text=Ouranos%20est%20le%20père%20de,il%20haïssait%20tous%20ses%20enfants." target="_blank">
+<img src="ouranos.png" alt="Représentation d'Ouranos">
+</a>
+
+<section>
+<h2> Nom</h2>
+<ul>
+<li>Nom grec : Οὐρανός (Ouranos)</li>
+<li>Nom latin : Uranus</li>
+<li>Signification : Le Ciel</li>
+</ul>
+</section>
+
+<section>
+<h2> Nature / Fonction</h2>
+<ul>
+<li>Divinité primordiale</li>
+<li>Personnification du Ciel</li>
+<li>Voûte céleste qui recouvre la Terre</li>
+<li>Père des Titans</li>
+<li>Symbole de l’autorité céleste originelle</li>
+</ul>
+
+<h3>Ordre de la création</h3>
+<ol>
+<li><a href="gaia.html" target="_blank">Gaïa</a></li>
+<li>Ouranos</li>
+<li>Les Titans</li>
+</ol>
+</section>
+
+<section>
+<h2> Informations principales</h2>
+<table>
+<tr>
+<th>Élément</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Origine</td>
+<td>Engendré par <a href="gaia.html" target="_blank">Gaïa</a> seule (sans père)</td>
+</tr>
+<tr>
+<td>Épouse</td>
+<td><a href="gaia.html" target="_blank">Gaïa</a></td>
+</tr>
+<tr>
+<td>Enfants</td>
+<td>Titans, <a href="cyclopes.html" target="_blank">Cyclopes</a>,<a href="hecatonchires.html" target="_blank">Hécatonchires</a></td>
+</tr>
+</table>
+</section>
+
+<button class="btnHistoire" onclick="afficherHistoire()">📜 Révéler l’Histoire</button>
+
+<section id="histoire" style="display:none;">
+<h2> Histoire</h2>
+<p>
+Au commencement du monde, lorsque <a href="gaia.html" target="_blank">Gaïa</a> s’étendait seule dans l’univers, elle engendra Ouranos, le Ciel étoilé.<br><br>
+Il se déploya au-dessus d’elle, vaste et infini, parsemé d’étoiles brillantes.<br><br>
+Ouranos et <a href="gaia.html" target="_blank">Gaïa</a> s’unirent, donnant naissance aux Titans, aux<a href="cyclopes.html" target="_blank">Cyclopes</a> et aux redoutables <a href="hecatonchires.html" target="_blank">Hécatonchires</a>.<br>
+Mais en voyant ses enfants puissants et monstrueux, Ouranos fut saisi de peur.<br>
+Craignant qu’ils ne le renversent, il enferma les <a href="cyclopes.html" target="_blank">Cyclopes</a> et les Hecatonchires dans le Tartare, une prison tres pronfonde, il enferma meme les titans dans le ventre de <a href="gaia.html" target="_blank">Gaïa</a><br><br>
+<a href="gaia.html" target="_blank">Gaïa</a>, accablée de douleur, forgea une faucille et demanda à ses enfants de se rebeller.<br>
+Seul Cronos osa agir, caché dans l’ombre, il attaqua son père et le mutila, séparant ainsi le Ciel de la Terre.<br><br>
+Du sang d’Ouranos naquirent les Érinyes et les Géants, et de son écume surgirait plus tard <a href="https://fr.vikidia.org/wiki/Aphrodite#:~:text=Aphrodite%20est%20la%20déesse%20de,romaine%2C%20son%20équivalent%20est%20Vénus." target="_blank">Aphrodite</a>.<br>
+Ainsi prit fin le règne du Ciel primordial, laissant place à l’ère des Titans.
+</p>
+</section>
+
+<footer>
+  <a href="arbre.html">
+  <button class="btnHistoire">Suivant →</button>
+</a>
+  <a href="index.html">
+  <button class="btnHistoire">🏠 Accueil </button>
+</a>
+Sources : Recherches personnelles + 
+<a href="https://fr.wikipedia.org/wiki/Uranus_(mythologie)" target="_blank">Wikipédia – Ouranos</a>
+</footer>
+
+<script>
+function afficherHistoire(){
+    const h = document.getElementById("histoire");
+    if(h.style.display === "block"){
+        h.style.display = "none"; // ferme l'histoire si déjà affichée
+    } else {
+        h.style.display = "block"; // affiche l'histoire
+    }
+}
+</script>
+
+</body>
+</html>
