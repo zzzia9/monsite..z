@@ -1,13 +1,232 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Titre de la page</title>
+<meta charset="UTF-8">
+<title>Cronos – Le Titan qui craignait l’avenir</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #331a00, #000000); 
+      color: #f0e5c1; 
+      font-family: "Cinzel", serif;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 3em;
+      letter-spacing: 3px;
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+    }
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: #331a00;
+    }
+    nav a {
+      color: #f0c75e;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(80,50,20,0.6);
+      border: 1px solid #f0c75e;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(240,199,94,0.2);
+    }
+    h2 {
+      color: #f0c75e;
+      border-bottom: 1px solid #d4a017;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 600px;
+      border-radius: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      background: rgba(240,199,94,0.1);
+    }
+    th, td {
+      border: 1px solid #f0c75e;
+      padding: 10px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #331a00;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    #recit {
+        display: none; 
+    }
+    a {
+      color: #f0e5c1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+  
+    #btnRecit {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      background: #8c6d3f;
+      color: #f0e5c1;
+      border: 2px solid #f0c75e;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Cinzel', serif;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    #btnRecit:hover {
+      background: #f0c75e;
+      color: black;
+    }
+    #histoire {
+        display: none; 
+    }
+
+
+
+
+
+
+    a {
+    color: #f0e5c1;     
+    text-decoration: none; 
+    font-weight: bold;       
+}
+  a:hover {
+    color: #ffffff;     
+    text-decoration: underline; 
+}
+</style>
 </head>
+
 <body>
-<h1>les intelligences </h1>
+
+<header>
+⏳ Cronos – Le Titan qui craignait l’avenir
+</header>
+
+<nav>
+<a href="#recit">Révéler le récit ↓</a>
+<a href="https://fr.wikipedia.org/wiki/Cronos" target="_blank">Lien externe</a>
+</nav>
+
+
+<a href="cronos.png" target="_blank">
+<img src="cronos.png" alt="Représentation de Cronos">
+</a>
+
+<section>
+<h2>Nom</h2>
+<ul>
+<li>Nom grec : Κρόνος (Kronos)</li>
+<li>Nom latin : Saturnus (Saturne)</li>
+<li>Signification : Associé au temps destructeur</li>
+</ul>
+</section>
+
+<section>
+<h2>Nature / Fonction</h2>
+<ul>
+<li>Titan</li>
+<li>Roi des Titans</li>
+<li>Souverain de l’Âge d’or</li>
+<li>Dieu lié au temps cyclique et à la moisson (tradition romaine)</li>
+</ul>
+
+<h3>Objets / Attributs</h3>
+<ul>
+<li>Faucille (utilisée pour mutiler Ouranos)</li>
+<li>Sablier (symbolisme tardif)</li>
+<li>Pierre emmaillotée (remplaça <a href="zeus.html" target="_blank">Zeus</a>)</li>
+</ul>
+</section>
+
+<section>
+<h2>Famille</h2>
+<table>
+<tr>
+<th>Parent(s)</th>
+<th>Épouse</th>
+<th>Enfants</th>
+</tr>
+<tr>
+<td><a href="ouranos.html" target="_blank">Ouranos</a> & <a href="gaia.html" target="_blank">Gaïa</a></td>
+<td><a href="rhea.html" target="_blank">Rhéa</a></td>
+<td>Hestia, Déméter, <a href="hera.html" target="_blank">Héra</a>, <a href="hades.html" target="_blank">Hades</a>, <a href="poseidon.html" target="_blank">Poseidon</a>, <a href="zeus.html" target="_blank">Zeus</a><br>(les cinq premiers avalés à leur naissance)</td>
+</tr>
+</table>
+</section>
+
+<section>
+<h2>Caractère</h2>
+<ul>
+<li>Ambitieux, Rusé, Paranoïaque, Cruel par peur, Tyrannique malgré un règne prospère</li>
+</ul>
+</section>
+
+<button id="btnRecit" onclick="afficherRecit()">📖 Révéler le récit</button>
+
+<section id="recit">
+<h2>Récit narratif</h2>
+<p>
+Cronos, le plus jeune des Titans, osa défier son père <a href="ouranos.html" target="_blank">Ouranos</a>. Armé de la faucille forgée par <a href="gaia.html" target="_blank">Gaia</a>, il surgit de l’ombre et renversa le Ciel, mettant fin à son règne. Ainsi commença l’ère des Titans.<br><br>
+
+Sous le règne de Cronos s’ouvrit l’Âge d’or : une époque de prospérité où les hommes vivaient sans souffrance ni travail. Mais derrière cette paix apparente se cachait une peur terrible.<br><br>
+
+Une prophétie annonçait que Cronos serait détrôné par l’un de ses propres enfants, comme il l’avait fait avec son père. Terrifié, il décida de déjouer le destin. Chaque fois que <a href="rhea.html" target="_blank">Rhéa</a> donnait naissance à un enfant, il l’avalait immédiatement.<br><br>
+
+Hestia, Déméter,<a href="hera.html" target="_blank">Héra</a>, <a href="hades.html" target="_blank">Hades</a>,  <a href="poseidon.html" target="_blank">Poseidon</a>… Tous disparurent dans son ventre. Désespérée, <a href="rhea.html" target="_blank">Rhéa</a> sauva son dernier fils, <a href="zeus.html" target="_blank">Zeus</a>, en lui donnant une pierre enveloppée dans des langes, qu’il avala sans méfiance. <a href="zeus.html" target="_blank">Zeus</a> grandit en secret puis revint défier son père.<br><br>
+
+Contraint par la ruse, Cronos recracha ses enfants. La grande guerre des dieux, la <a href="https://www.le-mont-olympe.com/blogs/top-histoires-mythe-mythologie-grecque/la-titanomachie-la-guerre-epique-entre-dieux-et-titans?srsltid=AfmBOop6mJPaaPoOUtLyXXavQIjyCk86jRhvgXkE44r8kunU-idf6xtq" target="_blank">Titanomachie</a> , éclata alors. <a href="zeus.html" target="_blank">Zeus</a> triompha et précipita les Titans dans le <a href="https://www.universalis.fr/encyclopedie/tartare-mythologie/" target="_blank">Tartare</a>.<br><br>
+
+Ainsi s’accomplit la prophétie : nul ne peut échapper au destin, pas même un roi des Titans.
+</p>
+</section>
+
+<footer>
+Sources : Recherches personnelles + 
+<a href="https://fr.wikipedia.org/wiki/Cronos" target="_blank">Wikipédia – Cronos</a>
+</footer>
+
+<script>
+function afficherRecit(){
+    const r = document.getElementById("recit");
+    if(r.style.display === "block"){
+        r.style.display = "none";
+    } else {
+        r.style.display = "block";
+    }
+}
+</script>
+
 </body>
 </html>
