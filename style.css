@@ -1,1 +1,103 @@
 
+
+
+body {
+    background-image: url("parchemin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #3b2f1c;
+    font-family: "Georgia", serif;
+
+    margin: 0;
+    padding: 40px;
+}
+main {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin-top: 60px;
+    color: #5a3e1b;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.image-centree img {
+    width: 20px;       /* largeur souhaitée */
+    height: auto;       /* garde les proportions */
+    display: block;
+    margin: 0 auto;     /* centre l'image */
+    border: 2px solid #5a3e1b;
+}
+
+ul, ol {
+    margin-left: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #5a3e1b;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.bouton-fin {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.btn-hiver {
+    width: 220px;
+    height: 60px;
+    background-color: #8b7d5a;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-hiver:hover {
+    background-color: #6f6245;
+}
+
+.retour {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+html {
+    font-size: 115%;
+}
+
+body {
+    font-weight: 800;
+}
