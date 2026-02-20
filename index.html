@@ -1,140 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mythologie grecque - Accueil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
 </head>
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: white;
+        font-family: 'Cinzel';
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #stars {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: 3em;
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+    }
+
+    p {
+        max-width: 600px;
+        font-size: 1.2em;
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+        animation-delay: 3s;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 15px 30px;
+        font-size: 1.1em;
+        background: transparent;
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+        cursor: pointer;
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+        animation-delay: 10s;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: floralwhite;
+        color: black;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+</style>
 
 <body>
 
-<main>
+<canvas id="stars"></canvas>
+ 
+<h1>Avant les Dieux...</h1>
 
-    <h1 id="haut">La Mythologie Grecque</h1>
+<p>
+Il n’y avait que le vide.  
+Un silence éternel appelé Chaos.  
+Puis, du néant, émergea une présence ancienne...  
+Une force primordiale nommée Gaïa.
+</p>
 
-    <!-- Image principale -->
-<div style="text-align:center; margin:20px 0;">
-    <a href="https://www.worldhistory.org/trans/fr/1-11677/ceramique-grecque-antique/" target="_blank">
-        <img src="ceramique.png" alt="Céramique grecque mythologique" width="200" style="border: 4px solid #5a3e1b; border-radius: 15px;">
-    </a>
-</div>
-    <section>
-        <h2>Civilisation grecque : origine</h2>
+<a href="index.html">
+    <button>Découvrir la Mythologie Grecque</button>
+</a>
 
-        <p>
-            La mythologie grecque est l'ensemble des mythes et légendes auxquels croyaient
-            les hommes de la Grèce antique.
-            Elle est constituée de nombreux récits racontant la vie et les aventures de héros,
-            de créatures mythologiques et d’êtres surnaturels.
-        </p>
-
-        <p>
-            Les Grecs de l'Antiquité utilisaient ces récits pour expliquer l’origine du monde,
-            les phénomènes naturels et les comportements humains.
-            La mythologie faisait partie intégrante de leur culture et de leur vision du monde.
-        </p>
-
-        <p>
-            Le statut de la mythologie grecque est complexe, car elle dépasse le cadre strict
-            de la religion. Les événements mythiques étaient considérés comme des faits
-            appartenant à un passé très ancien.
-        </p>
-
-        <p>
-            La religion grecque reposait sur des rituels collectifs,
-            mais ne s’appuyait ni sur un texte sacré, ni sur des dogmes fixes.
-        </p>
-
-        <p>
-            L’évhémérisme est une théorie selon laquelle les personnages mythologiques
-            seraient inspirés de figures humaines ayant réellement existé
-            (Évhémère, IIIe siècle av. J.-C.).
-        </p>
-    </section>
-
-    
-
-    <section>
-        <h2>Mythologie et art</h2>
-
-        <p>
-            La mythologie grecque nous est parvenue grâce à de nombreux supports artistiques
-            comme la céramique, la sculpture et les monuments sacrés.
-        </p>
-
-        
-    </section>
-
-    <section>
-        <h2>Supports de transmission</h2>
-
-        <table>
-            <tr>
-                <th>Support</th>
-                <th>Type</th>
-                <th>Rôle</th>
-            </tr>
-            <tr>
-                <td>Poésie</td>
-                <td>Orale / écrite</td>
-                <td>Récits mythologiques</td>
-            </tr>
-            <tr>
-                <td>Céramique</td>
-                <td>Art figuré</td>
-                <td>Illustration des mythes</td>
-            </tr>
-            <tr>
-                <td>Architecture</td>
-                <td>Monuments</td>
-                <td>Mémoire collective</td>
-            </tr>
-        </table>
-    </section>
   
-<section>
-        <h2>Les personnages principaux</h2>
+<script>
+    // Animation étoiles
+    const canvas = document.getElementById("stars");
+    const ctx = canvas.getContext("2d");
 
-  <div class="double-liste">
-<ul> 
-  <li><a href="gaia.html" target="_blank">Gaïa – Déesse Primordiale</a></li>
-  <li><a href="ouranos.html" target="_blank">Ouranos – Le Ciel étoilé</a></li> 
-  <li><a href="rhea.html" target="_blank">Rhéa – La mère courage</a></li> 
-    <li><a href="cronos.html" target="_blank">Cronos – Le Titan qui craignait l’avenir</a></li> 
-    <li><a href="cyclope.html" target="_blank"> Les Cyclopes – Les forgerons primordiaux</a></li> 
-</ul>
-    <ul>
-        <li><a href="zeus.html">Zeus – Roi des dieux</a></li>
-        <li><a href="hera.html">Héra – La reine jalouse</a></li>
-        <li><a href="poseidon.html">Poséidon – Dieu des mers</a></li>
-        <li><a href="hades.html">Hadès – Souverain des Morts – Déesse de la sagesse</a></li>
-        <li><a href="hecatonchires.html">Les Hécatonchires – Les Cent-Bras Primordiaux</a></li>
-    </ul>
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-</div>
-       
+    let stars = [];
 
-        
-    </section>
+    for (let i = 0; i < 150; i++) {
+        stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 2,
+            alpha: Math.random()
+        });
+    }
 
-    <div class="boutons-fin">
-    <a href="arbre.html" target="_blank" class="btn-mini">Arbre généalogique</a>
-    <a href="olympe.html" target="_blank" class="btn-mini">Olympe</a>
-    <a href="adndivin.html" target="_blank" class="btn-mini">Test ADN</a>
-</div>
+    function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        stars.forEach(star => {
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(255,255,255," + star.alpha + ")";
+            ctx.fill();
+        });
+    }
+
+    function animateStars() {
+        stars.forEach(star => {
+            star.alpha += (Math.random() - 0.5) * 0.05;
+            if (star.alpha < 0) star.alpha = 0;
+            if (star.alpha > 1) star.alpha = 1;
+        });
+
+        drawStars();
+        requestAnimationFrame(animateStars);
+    }
+
+    animateStars();
 
 
-    <p class="retour"><a href="#haut">⬆ Retour en haut</a></p>
 
-</main>
-
-<footer>
-    <p>
-        Sources :
-        <a href="https://fr.wikipedia.org/wiki/Mythologie_grecque" target="_blank">Wikipédia</a>,
-        Manuels scolaires, Livres.
-    </p>
-</footer>
-
+</script>
 </body>
-</html> 
+</html>
