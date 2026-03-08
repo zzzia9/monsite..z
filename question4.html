@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Question 3</title>
+</head>
+
+<body>
+
+<h2>Question 4</h2>
+
+<p>Combien de bras possédait un Hécatonchire ?</p>
+<p>écrire un nombre entier (ex : 100)</p>
+
+<input type="number" id="rep">
+
+<br><br>
+
+
+<a href="question5.html">
+<button onclick="verifier()">Valider</button>
+</a>
+  
+<script>
+
+function verifier(){
+
+let score = Number(localStorage.getItem("score"));
+
+let rep = document.getElementById("rep").value;
+
+if(rep == 100){
+score++;
+}
+
+localStorage.setItem("score",score);
+; 
+
+}
+
+</script>
+  
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+</body>
+</html>
