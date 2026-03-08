@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>ADN Divin<</title>
+<meta charset="UTF-8">
+<title>Introduction QCM</title>
 
-  <style>
-body {
-  margin: 0;
-  height: 100vh;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Cinzel", serif;
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background: radial-gradient(circle at center,#0d1b1e,#000);
+color:#e8d8a8;
+font-family:"Cinzel",serif;
+text-align:center;
 }
 
-.message {
-  font-size: 4em; 
-  text-align: center;
-  color: black;
-}
-    .btn-accueil {
-    position: fixed;  
-    top: 20px;
-    left: 20px;
-    padding: 12px 25px;
-    background: ghostwhite;
-    color: black;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 1000;   
-    transition: 0.3s;
+section{
+max-width:800px;
+margin:120px auto;
+padding:50px;
+background:rgba(20,40,30,0.6);
+border:1px solid #58c0f0;
+border-radius:15px;
 }
 
-.btn-accueil:hover {
-    background: whitesmoke;
-    color: black;
+h1{
+margin-bottom:30px;
+font-size:36px;
 }
+
+p{
+font-size:20px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+background:#1b3a4b;
+color:#e8d8a8;
+border:2px solid #58c0f0;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+font-family:"Cinzel",serif;
+}
+
+button:hover{
+background:#58c0f0;
+color:black;
+box-shadow:0 0 15px #58c0f0;
+}
+
 </style>
-  </head>
-    <a href="accueil.html" class="btn-accueil">Accueil</a>
+</head>
+
 <body>
 
-  <div class="message">
-  Rendez-vous le 9 mars pour le quiz en Java ⚡
-</div>
+<section>
+
+<h1>Le QCM commence</h1>
+
+<p>
+J'espère que tu as bien lu attentivement ce qu'on t'a proposé, car maintenant il est temps de passer au test.
+<br><br>
+Le QCM va vérifier tes connaissances sur la mythologie grecque.
+<br><br>
+À toi de jouer !
+</p>
+
+<a href="question1.html">
+<button>Commencer le QCM</button>
+</a>
+
+</section>
+
 </body>
 </html>
