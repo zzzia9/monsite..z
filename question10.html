@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Question 10</title>
+</head>
+
+<body>
+
+<h2>Question 10</h2>
+
+<p>Quel héros Héra persécuta dès son enfance ?</p>
+
+<select id="rep">
+<option>Persée</option>
+<option>Achille</option>
+<option>Héraclès</option>
+<option>Thésée</option>
+</select>
+
+<br><br>
+
+<a href="resultat.html">
+<button onclick="verifier()">Valider</button>
+</a>
+
+<script>
+
+function verifier(){
+
+let score = Number(localStorage.getItem("score"));
+
+let rep = document.getElementById("rep").value;
+
+if(rep === "Héraclès"){
+score++;
+}
+
+localStorage.setItem("score",score);
+; 
+}
+
+</script>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+</body>
+</html>
