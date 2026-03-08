@@ -1,0 +1,39 @@
+<!DOCTYPE html> <html lang="fr"> <head> 
+  <meta charset="UTF-8"> <title>Résultat</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet"> <style> 
+    body{ background:black; color:#e8d8a8; font-family:"Cinzel", serif; text-align:center; } 
+    h1{ margin-top:50px; } h2#score{ font-size:28px; margin-top:20px; } 
+    button{ padding:15px 30px; margin:20px; background:#1b3a4b; color:#e8d8a8; border:2px solid #58c0f0; border-radius:10px; 
+  cursor:pointer; font-family:"Cinzel",serif; transition:0.3s; } 
+    button:hover{ background:#58c0f0; color:black; box-shadow:0 0 15px #58c0f0; } 
+    select,input{ padding:10px; font-size:16px; margin-top:10px; }
+    .boutonVert{ background:green !important; border-color:#3cff3c !important; color:white !important; } 
+    .boutonRouge{ background:red !important; border-color:#ff3c3c !important; color:white !important; }
+    #reponses{ max-width:600px; margin:30px auto; text-align:left; background: rgba(20,40,30,0.6); padding:20px; border-radius:10px;
+              border:1px solid #58c0f0; } 
+    #btnAccueil{ position:fixed; bottom:20px; right:20px; padding:12px 20px; font-size:16px; background:#1b3a4b; 
+                color:#e8d8a8; border:2px solid #58c0f0; border-radius:50px; cursor:pointer; font-family:"Cinzel", serif; 
+                transition:0.3s; z-index:1000; }
+    #btnAccueil:hover{ background:#58c0f0; color:black; box-shadow:0 0 15px #58c0f0; } </style>
+</head> <body> <h1>Résultat du Quiz</h1> 
+  <h2 id="score"></h2> <a href="QCM_JavaScript.html">
+    <button id="btnRecommencer">Recommencer</button> </a> <button id="btnReponses" onclick="voirReponses()">Voir les réponses</button> 
+  <div id="reponses" style="display:none"> <h3>Réponses</h3> <p>1️⃣ Gaïa est l'épouse d'Ouranos → Vrai</p> 
+    <p>2️⃣ Qui a renversé Ouranos → Cronos</p> <p>3️⃣ Qui a créé Ouranos → gaia</p> <p>4️⃣ Combien de bras possédait un Hécatonchire → 100</p>
+    <p>5️⃣ Qui a emprisonné les Hécatonchires dans le Tartare → Ouranos</p> 
+    <p>6️⃣ Après la guerre contre les Titans, les Hécatonchires devinrent les gardiens du Tartare → Vrai</p> 
+    <p>7️⃣ Quel domaine Zeus reçut-il lors du partage du monde → Le ciel</p>
+    <p>8️⃣ Qui devint la reine des Enfers après avoir été enlevée par Hadès → Perséphone</p> 
+    <p>9️⃣ Comment s’appelle la déesse du mariage et épouse de Zeus → hera</p>
+    <p>🔟 Quel héros Héra persécuta dès son enfance → Héraclès</p> </div> 
+  <a href="accueil.html"> <button id="btnAccueil">Accueil 🏠</button> </a> 
+  <script> let score = Number(localStorage.getItem("score")); let zoneScore = document.getElementById("score"); 
+    let btn1 = document.getElementById("btnRecommencer"); let btn2 = document.getElementById("btnReponses"); 
+    zoneScore.innerHTML = "Votre score est : " + score + " / 10"; 
+    if(score === 10){ zoneScore.style.color = "lightgreen"; btn1.classList.add("boutonVert"); 
+                     btn2.classList.add("boutonVert"); } else{ zoneScore.style.color = "red";
+                                                              btn1.classList.add("boutonRouge"); 
+                      btn2.classList.add("boutonRouge"); } function voirReponses(){
+      document.getElementById("reponses").style.display="block"; } </script>
+</body> 
+</html>
