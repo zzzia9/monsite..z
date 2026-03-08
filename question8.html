@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Question 8</title>
+</head>
+
+<body>
+
+<h2>Question 8</h2>
+
+<p>Qui devint la reine des Enfers après avoir été enlevée par Hadès ?</p>
+
+<select id="rep">
+<option>Athéna</option>
+<option>Perséphone</option>
+<option>Aphrodite</option>
+<option>Artémis</option>
+</select>
+
+<br><br>
+
+<a href="question9.html">
+<button onclick="verifier()">Valider</button>
+</a>
+
+<script>
+
+function verifier(){
+
+let score = Number(localStorage.getItem("score"));
+
+let rep = document.getElementById("rep").value;
+
+if(rep === "Perséphone"){
+score++;
+}
+
+localStorage.setItem("score",score);
+; 
+}
+
+</script>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+</body>
+</html>
