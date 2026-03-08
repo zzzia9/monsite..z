@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Question 9</title>
+</head>
+
+<body>
+
+<h2>Question 9</h2>
+
+<p>Comment s’appelle la déesse du mariage et épouse de Zeus ?</p>
+<p>écrire en minuscule sans accent </p>
+
+<input type="text" id="rep">
+
+<br><br>
+
+<a href="question10.html">
+<button onclick="verifier()">Valider</button>
+</a>
+<script>
+
+function verifier(){
+
+let score = Number(localStorage.getItem("score"));
+
+let rep = document.getElementById("rep").value;
+
+if(rep === "hera"){
+score++;
+}
+
+localStorage.setItem("score",score);
+; 
+
+}
+
+</script>
+  
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+</body>
+</html>
